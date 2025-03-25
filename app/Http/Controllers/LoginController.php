@@ -19,11 +19,11 @@ class LoginController extends Controller {
             $request->session()->regenerate();
 
             // Check if user is admin
-            if (auth()->user()->is_admin) {
+            if (Auth::user()) {
                 return redirect()->intended('/admin/dashboard');
             }
 
-            return redirect()->intended('/home');
+            return redirect()->intended('/admin-login');
         }
 
         return back()->withErrors([

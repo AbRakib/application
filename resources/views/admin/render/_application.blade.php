@@ -15,7 +15,7 @@
         </a>
     </td>
     <td
-        class="total-orders align-middle white-space-nowrap fw-semibold text-end text-body-highlight">
+        class="total-orders align-middle white-space-nowrap fw-semibold text-start text-body-highlight">
         {{ $item->referrer_id }}
     </td>
     <td class="email align-middle white-space-nowrap pe-5">

@@ -55,6 +55,19 @@
             
             <form id="applicationForm" method="POST" enctype="multipart/form-data">
                 @csrf
+
+                <!-- Refer Information Section -->
+                <div class="mb-4">
+                    <h5 class="mb-3 border-bottom pb-2"><i class="fas fa-user me-2"></i>Refer Information</h5>
+                    
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <label for="referrerId" class="form-label required-field">Referrer Code</label>
+                            <input type="text" name="referrerId" class="form-control" id="referrerId" required>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Personal Information Section -->
                 <div class="mb-4">
                     <h5 class="mb-3 border-bottom pb-2"><i class="fas fa-user me-2"></i>Personal Information</h5>
